@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+    color: white;
+}
+
+main {
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+  border: 1px solid darkgray;
+  border-radius: 0.5rem;
+  background-color: #e5e5e5;
+
+
+
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+article {
+    background-color: white;
+    width: 260px;
+    height: 90px;
+    border-radius: 0.5rem;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+article h2 {
+    color: #4078c0;
+    margin: 0.5rem 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+
+.pokenumber{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #d1d5db;
+}
+
+.typeoverview{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+
+}
+.fire{
+    background-color: #f08030;
+}
+
+.flying{
+    background-color: #a890f0;
+
+}
+.poison{
+    background-color: #a040a0;
+
+}
+.grass{
+    background-color: #78c850;
+
+}
+
+.fire, .flying, .poison, .grass {
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+img{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        max-width: 900px;
+        border: none;
+        height: auto;
+        border-radius: 0;
+    }
+    article{
+        flex-grow:1 ;
+    }
+
+
+    body{
+        margin: 0px
+    }
+}
+
+@media all and (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+        box-shadow: none;
+    }
+
+}

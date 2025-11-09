@@ -1,0 +1,173 @@
+.barlow-thin {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: normal;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    background-color: #20272a;
+    height: 4rem;
+    width: 100%;
+}
+header h2{
+    height: 100%;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+#ingredientsBox h2{
+    font-weight: bold;
+}
+#ingredientsBox h3{
+    color: #888c9e;
+}
+#ingredientsBox{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ingredients {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ingredientsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+.ingredientsList li {
+    border-bottom: 1px dotted #aaa;
+    padding: 0.3rem 0;
+}
+article{
+    width: 50%;
+}
+aside{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 50%;
+}
+
+aside h2{
+    font-weight: bold;
+}
+
+aside article{
+    display: flex;
+    flex-direction: row;
+    border: 1px dotted #aaa;
+
+}
+aside article figure{
+    align-content: stretch;
+    margin: 0px 15px 0px 0px;
+
+}
+
+aside article img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#preperation h2{
+    font-weight: bold;
+}
+#preperation ol li{
+    border-bottom: 1px dotted #aaa ;
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: #20272a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+nav  a{
+    color:white;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1500px){
+
+    .ingredientsList{
+        width: 100%;
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    aside {
+        order: -1;
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    aside h2{
+        display: none;
+    }
+    aside article {
+        display: none;
+    }
+
+    aside img:first-of-type {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    article {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
